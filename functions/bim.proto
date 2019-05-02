@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Mega.Bim;
+
+message Item {
+    string id = 1;
+    string category = 2;
+    string family = 3;    
+}
+
+message Result {
+    string message = 1;
+}
+
+service Items {
+    rpc sendItems(stream Item) returns (Result);
+}

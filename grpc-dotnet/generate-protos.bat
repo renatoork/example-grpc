@@ -1,0 +1,1 @@
+protoc.exe -I%UserProfile%\.nuget\packages\google.protobuf.tools\3.5.1\tools -I..\proto --csharp_out=.\Models --grpc_out=./grpc ..\proto\bim.proto --plugin=protoc-gen-grpc=%UserProfile%\.nuget\packages\grpc.tools\1.11.0\tools\windows_x64\grpc_csharp_plugin.exe
